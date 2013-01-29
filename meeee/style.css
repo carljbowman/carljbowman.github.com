@@ -29,7 +29,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.3;
+	background-image:url('');
+	background-color:#345765;
 }
 ol, ul {
 	list-style: none;
@@ -48,9 +50,15 @@ table {
 }
 
 /* Add Styles Here */
-body { font-family:Times; font-size:14px; }
-section#content { margin:0 auto; width:960px; padding:20px 0px; }
+body { font-family:'palatino linotype', palatino, serif;; font-size:14px; }
+section#name { margin:1 auto; width:400px; padding-left:140px; padding-top:100px; padding-bottom:270px; }
+section#body { margin:1 auto; width:1280px; padding-left:0px; }
 
-h1 { font-size:48px; font-weight:bold; color:black; text-align:center; }
-h2 { font-size:36px; font-weight:bold; color:black; text-align:center; }
-p { padding-bottom:10px; }
+h1 { font-size:48px; font-style: italic; text-align:left; letter-spacing: 2pt; color: #F2754B; drop-shadow: 4px 0px #711000; text-shadow: 2px 2px 1px #F0F0F0 text-shadow: 0px 1px 0px #C8D0E7; background-color: ; padding-left: 20px; padding-top: 5px; }
+h2 { font-size:14px; text-transform: uppercase; color:black; text-align:left; letter-spacing: 5pt; padding-top:10px; background-color: ; padding-left: 20px; padding-bottom: 10px;}
+p { font-size:14px; font-style: italic; letter-spacing: 2pt; color: #FFFFFF; background-color: #F2754B; padding-top: 20px; padding-right: 770px; padding-left: 150px; padding-bottom: 50px; -moz-box-shadow:    inset 0 0 5px #000000;
+   -webkit-box-shadow: inset 0 0 6px #000000;
+   box-shadow:         inset 0px 0px 4px 0px #711000; }
+
+
+
