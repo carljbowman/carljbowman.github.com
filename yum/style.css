@@ -53,4 +53,30 @@ table {
 
 /* END RESET */
 
+h1, ol {
 
+	font-family:Palatino;
+
+}
+
+h1 {
+	font-weight:bold;
+	font-size:1.3em;
+	text-transform:uppercase;
+	line-height:2em;
+	letter-spacing:.1em;
+}
+
+ul {
+
+	font-family:helvetica;
+	font-size: 0.8em;
+	line-height:1.3em;
+}
+
+ol {
+	font-size:0.8em;
+	line-height:1.4em;
+	padding: 1em;
+	
+}
