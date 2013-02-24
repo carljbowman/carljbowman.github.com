@@ -51,6 +51,8 @@ table {
 }
 
 
+/* END RESET */
+
 /* Center Content */
 
 .centered { 
@@ -73,4 +75,48 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+	padding: 1em 0em .5em 0em;
+	font-size: 1.5em;
+	
+}
 
+h2 {
+	font-family: 'Fjalla One', sans-serif;
+	padding: 0.3em 0em 0em 0em;
+	font-size: 4em;
+	text-transform:uppercase;
+	letter-spacing: 0.01em;
+	
+}
+
+
+p, nav {
+	font-family: 'Titillium Web', sans-serif;
+	padding: 0em 0em 1em 0em;
+}
+
+nav {
+	text-transform:uppercase;
+	padding: 1em 0em 1em 0em;
+}
+
+p {
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color: gray;
+	font-weight: 600;
+}
+
+a:hover {
+	color: red;
+}
+
+em {
+	font-style:italic;
+}
