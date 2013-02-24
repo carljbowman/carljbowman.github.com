@@ -53,7 +53,7 @@ table {
 
 /* END RESET */
 
-h1, ol {
+h1, h2, ol, a:link {
 
 	font-family:Palatino;
 
@@ -67,11 +67,20 @@ h1 {
 	letter-spacing:.1em;
 }
 
+h2 {
+	padding: .5em 0em .5em 0em;
+}
+
+nav {
+	padding: 1em 0em 1em 0em;
+	line-height: 1.5em;
+}
+
 ul {
 
 	font-family:helvetica;
 	font-size: 0.8em;
-	line-height:1.3em;
+	line-height:1.5em;
 }
 
 ol {
@@ -79,4 +88,15 @@ ol {
 	line-height:1.4em;
 	padding: 1em;
 	
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #466B3A;
+	padding: .15em 2em .15em 2em;
+}
+
+a:hover {
+	background:#466B3A;
+	color: white;
 }
