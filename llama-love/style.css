@@ -53,4 +53,48 @@ table {
 
 /* END RESET */
 
+body {
+	 width: 80%;
+	 margin: 0 auto;
+	 font-family: helvetica, sans-serif;
+	 padding: 3em;
+	 }
 
+h1  { 
+	font-size:1.4em;
+	font-weight: bold;
+	width:8em;
+	padding-bottom:.5em;
+	}
+	
+h2  {
+	font-size:0.8em;
+	color:#737373;
+	width:9em;
+	padding-bottom:2em;
+	}
+	
+p   {
+	font-size:0.9em;
+	line-height: 1.2em;
+	width: auto;
+	padding-top:1em;
+    }
+    
+    
+h1, h2, img.alignleft {
+						 float:left;
+						 }
+    
+img.alignleft   {
+				width:200px; height:167;
+				padding-right:1em;
+				padding-bottom:1em;
+                }
+            
+       
+article {
+		width: 25em;
+		float:left;
+		padding: 2em;
+        }
