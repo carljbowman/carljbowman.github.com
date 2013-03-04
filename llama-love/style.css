@@ -63,26 +63,23 @@ body {
 h1  { 
 	font-size:1.4em;
 	font-weight: bold;
-	width:8em;
 	padding-bottom:.5em;
 	}
 	
 h2  {
 	font-size:0.8em;
 	color:#737373;
-	width:9em;
 	padding-bottom:2em;
 	}
 	
 p   {
 	font-size:0.9em;
 	line-height: 1.2em;
-	width: auto;
 	padding-top:1em;
     }
     
     
-h1, h2, img.alignleft {
+img.alignleft {
 						 float:left;
 						 }
     
