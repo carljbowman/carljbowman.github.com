@@ -121,12 +121,12 @@ table {
 #page {
 	  float:left;
 	  width: 50%;
-	  margin-right: 16%;
+	  margin-right: 20%;
 	  }
 	  
 #sidebar {
 	     float:right;
-	     width: 34%;
+	     width: 30%;
 	     }
 	     
 #sidebar img{
@@ -179,8 +179,8 @@ a {
   }
   
 p {
-  font-size:.75em;
-  line-height:1.2em;
+  font-size:.7em;
+  line-height:1.5em;
   padding-bottom: .6em;
   }
   
