@@ -51,7 +51,78 @@ table {
 }
 
 
-/* END RESET */
+/* ------------------------END RESET------------------------ */
+
+
+
+
+/* ------------------------POSITIONING------------------------ */
+
+
+#menu-container {
+		   position:fixed;
+		   height:100%;
+		   width:13em;
+		   left:0;
+		   background-color:white;
+		   border-right: 1px dotted lightgray;
+		   box-shadow: 0em 0em 1.5em lightgray;
+           }
+           
+#menu  li {
+		  position:relative; 
+		  width:80%;
+		  margin:0 auto;
+		  }
+		  
+#recipes {
+		  position:relative;
+		  left:13em;
+		  top:5.5em;
+		  width:150%;
+		  background-color:red;
+		  }
+      
+#recipe {
+		float:left;
+		width:350px;
+		padding: 0em 3em 0em 3em;
+		border-right: 1px dotted lightgray;
+        }
+        
+#ingredients {
+			 position:relative;
+			 width:90%;
+			 margin: 0 auto;
+			 }
+     
+#ingredients ul {
+			 position:relative;
+			 width: 90%;
+			 margin: 0 auto;
+			 }
+
+#ingredients li {
+			    width:50%;
+			    float:left;
+			    }
+			    
+#prep-work {
+			 position:relative;
+			 width:90%;
+			 margin-top:8em;
+			 margin-right: auto;
+			 margin-left: auto;
+			 }
+     
+#prep-work ol {
+			 position:relative;
+			 width: 100%;
+			 margin: 0 auto;
+			 }
+
+
+/* ------------------------STYLING------------------------ */
 
 h1, h2, ol, a:link {
 
@@ -66,6 +137,11 @@ h1 {
 	line-height:2em;
 	letter-spacing:.1em;
 }
+
+#menu-container h1 {
+				   font-size: 1.5em;
+				   text-align:center;
+		 		   }
 
 h2 {
 	padding: .5em 0em .5em 0em;
@@ -83,9 +159,13 @@ ul {
 	line-height:1.5em;
 }
 
+ol li {
+      padding-top:1em;
+	  }
+
 ol {
 	font-size:0.8em;
-	line-height:1.4em;
+	line-height:1.6em;
 	padding: 1em;
 	
 }
@@ -94,9 +174,4 @@ a:link, a:visited {
 	text-decoration: none;
 	color: #466B3A;
 	padding: .15em 2em .15em 2em;
-}
-
-a:hover {
-	background:#466B3A;
-	color: white;
 }
