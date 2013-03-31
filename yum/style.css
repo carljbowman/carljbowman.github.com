@@ -59,7 +59,7 @@ table {
 /* ------------------------POSITIONING------------------------ */
 
 
-#menu-container {
+.menu-container {
 		   position:fixed;
 		   height:100%;
 		   width:13em;
@@ -69,13 +69,13 @@ table {
 		   box-shadow: 0em 0em 1.5em lightgray;
            }
            
-#menu  li {
+.menu  li {
 		  position:relative; 
 		  width:80%;
 		  margin:0 auto;
 		  }
 		  
-#recipes {
+.recipes {
 		  position:relative;
 		  left:13em;
 		  top:5.5em;
@@ -83,31 +83,31 @@ table {
 		  background-color:red;
 		  }
       
-#recipe {
+.recipe {
 		float:left;
 		width:350px;
 		padding: 0em 3em 0em 3em;
 		border-right: 1px dotted lightgray;
         }
         
-#ingredients {
+.ingredients {
 			 position:relative;
 			 width:90%;
 			 margin: 0 auto;
 			 }
      
-#ingredients ul {
+.ingredients ul {
 			 position:relative;
 			 width: 90%;
 			 margin: 0 auto;
 			 }
 
-#ingredients li {
+.ingredients li {
 			    width:50%;
 			    float:left;
 			    }
 			    
-#prep-work {
+.prep-work {
 			 position:relative;
 			 width:90%;
 			 margin-top:8em;
@@ -115,7 +115,7 @@ table {
 			 margin-left: auto;
 			 }
      
-#prep-work ol {
+.prep-work ol {
 			 position:relative;
 			 width: 100%;
 			 margin: 0 auto;
@@ -138,7 +138,7 @@ h1 {
 	letter-spacing:.1em;
 }
 
-#menu-container h1 {
+.menu-container h1 {
 				   font-size: 1.5em;
 				   text-align:center;
 		 		   }

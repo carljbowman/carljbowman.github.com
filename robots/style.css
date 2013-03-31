@@ -198,7 +198,7 @@ p {
  				  display:block;  
  				  width:306px; 
  				  height:123px;  
- 				  background:src="images/logo.png" no-repeat top left; 
+ 				  background:url(images/logo.png) no-repeat top left; 
  				  text-indent:-9999px;
  				  }	
  				  
