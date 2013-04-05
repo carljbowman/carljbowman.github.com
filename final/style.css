@@ -60,7 +60,7 @@ table {
 			   height: 8em;
 			   width: 100%;
 			   position:fixed;
-			   top:0;
+			   top:2em;
 			   background-color:white;
 			   }
 
@@ -129,7 +129,7 @@ header h1 {
 /*----------------------- Nav Styling -----------------------*/
 
 body {
-	 font-family: "rooney-sans",sans-serif;
+	 font-family: "rooney-sans", "Bryant"sans-serif;
 	 }
 
 a:link {
