@@ -62,7 +62,6 @@ table {
 			   position:fixed;
 			   top:0;
 			   background-color:#fefefe;
-			   box-shadow: 0px 0px 7px #F05A28;	
 			   }
 
 header, #work, #contact, #about {
@@ -136,6 +135,10 @@ body {
 a:link {
 	   text-decoration:none;
 	   }
+	   
+a:visited {
+	   color:#6D6E70;
+	   }
 
 #site-wrapper h2 a:link {
 			       color:#F05A28;
@@ -166,15 +169,34 @@ a:link {
 			    margin-top:.4em;
 			    }
 
+/*----------------------- Project Positioning -----------------------*/
 
-/*----------------------- Content Positioning -----------------------*/
-
-#content-wrapper {
-				 margin-top: 10em;
+#project-wrapper {
+				 margin-top:8em;
 			   	 width:100%;
 			   	 }
 			   	 
-#projectname, #congress, #oil, #sustain, #eames	   {
+#list {
+	  margin-left:auto;
+	  margin-right:auto;
+	  width:90%;
+	  }
+	  
+.project {
+		 width:22%;
+		 margin:1.05em;
+		 float:left;
+		 }
+		 
+		 
+/*----------------------- Content Positioning -----------------------*/
+			   	 
+#content-wrapper {
+				 width:100%;
+				 margin-top: 2em;
+			   	 }
+			   	 
+#projectname, #congress, #oil, #sustain, #eames, #post  {
 			           			   width:100%;
 			          			   float:left;
 			           			   }
@@ -195,7 +217,7 @@ a:link {
 			     
 .project-break   {
 			     width:100%;
-			     height:5em;
+			     height:3.6em;
 			     margin: 2em 0 2em 0;
 			     background: url("images/image-break.png") repeat;
 			     }
