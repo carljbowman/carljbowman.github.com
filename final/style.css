@@ -247,18 +247,20 @@ a:visited {
 			   	 }
 			   	 
 #projectname, #congress, #oil, #sustain, #eames, #post  {
-			           			   width:100%;
-			          			   float:left;
-			           			   }
+			           			   						width:100%;
+			          			   						float:left;
+			           			   						}
 			   	 
-.title-wrapper, .work-wrapper {
-							  float:left;
-							  }
+#project-title, #congress-title, #oil-title, 
+#sustain-title, #eames-title, #post-title, .work-wrapper {
+							  							 float:left;
+							  							 }
 
-.title-wrapper {
-			   width:15%;
-			   margin-left:5%;
-			   }
+#project-title, #congress-title, #oil-title, 
+#sustain-title, #eames-title, #post-title {
+			   							  width:15%;
+			   						  	  margin-left:5%;
+			   						  	  }
 			   
 .project-content {
 			     width:73%;
@@ -282,7 +284,8 @@ img {
 	width:100%;	
 	}
 			   
-.project-part1, .project-part2, .project-part3, .project-part4 {
+.project-part1, .project-part2, 
+.project-part3, .project-part4 {
 							   width:100%;
 							   float:left;
 							   padding-bottom:1.5em;
@@ -307,54 +310,58 @@ img {
 					 }
 
 .threecolumnlast {
-			margin-right:0%;
-			}
+				 margin-right:0%;
+				 }
 			
-.twocolumn, .twocolumnlast {
-					 float:left;
-					 width:48.25%;
-					 margin-right:3.5%;
-					 }
+.twocolumn, .twocolumnlast  {
+					 		float:left;
+					 		width:48.25%;
+					 		margin-right:3.5%;
+					 		}
 
-.twocolumnlast {
-			margin-right:0%;
-			}
+.twocolumnlast 	{
+				margin-right:0%;
+				}	
 
 /*----------------------- Styling -----------------------*/
 
 
-.title-wrapper h1 {
-			      font-size: 1.8em;
-			      font-weight:bold;
-			      line-height:1.2em;
-			      width:100%;
-			   	  }
+#project-title h1, #congress-title h1, #oil-title h1, 
+#sustain-title h1, #eames-title h1, #post-title h1 	 {
+			      									 font-size: 1.8em;
+			      									 font-weight:bold;
+			      									 line-height:1.2em;
+			      									 width:100%;
+			      									}
 
-.title-wrapper h2 {
-			      font-size: .8em;
-			      font-weight:bold;
-			      margin-top: 2em;
-			   	  }
+#project-title h2, #congress-title h2, #oil-title h2, 
+#sustain-title h2, #eames-title h2, #post-title h2 {
+			      									font-size: .8em;
+			      									font-weight:bold;
+			      									margin-top: 2em;
+			   	  									}
 
-.title-wrapper img {
-			       margin-left:0;
-			       margin-top: 3em;
-			       width:40%;
-			   	   }
+#project-title img, #congress-title img, #oil-title img, 
+#sustain-title img, #eames-title img, #post-title img {
+			       									  margin-left:0;
+			       									  margin-top: 3em;
+			       									  width:40%;
+			   	   									  }
 
-.type p, .threecolumn p, .threecolumnlast p, .twocolumn p, .twocolumnlast p {
-	  	font-size:1.1em;
-	  	line-height:1.5em;
-	  	float:left;
-	  	}
+.type p, .threecolumn p, .threecolumnlast p, 
+.twocolumn p, .twocolumnlast p  {
+	  							font-size:1.1em;
+	  							line-height:1.5em;
+	  							float:left;
+	  							}
 
 .project-content img {
-	  	margin-bottom: 2em;
-	  	}
+	  				 margin-bottom: 2em;
+	  				 }
 	  	
-.project-part1 img {
-	  	margin-bottom: 0;
-	  	}
+.project-part1 img  {
+	  				margin-bottom: 0;
+	  				}
 
 .photo {
 	   float:right;
