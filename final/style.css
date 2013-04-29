@@ -62,6 +62,7 @@ table {
 			   position:fixed;
 			   top:0;
 			   background-color:#fefefe;
+			   z-index: 2;
 			   }
 
 header, #work, #contact, #about {
@@ -121,7 +122,7 @@ header h1 {
 
 #about  {
 		width:8%;
-		margin-right:1%;
+		margin-right:2%;
 		height:8em;
 		margin-top:1.2em;
 		}
@@ -137,6 +138,10 @@ a:link {
 	   }
 	   
 a:visited {
+	   color:#F05A28;
+	   }
+
+#years a:visited {
 	   color:#6D6E70;
 	   }
 
@@ -173,21 +178,66 @@ a:visited {
 
 #project-wrapper {
 				 margin-top:8em;
+				 padding-top:2em;
 			   	 width:100%;
+			   	 position:relative;
+			   	 margin-bottom:5em;
 			   	 }
 			   	 
 #list {
 	  margin-left:auto;
 	  margin-right:auto;
 	  width:90%;
+	  position: relative;
 	  }
 	  
 .project {
 		 width:22%;
-		 margin:1.05em;
+		 margin-left:1.5%;
+		 margin-right:1.5%;
+		 margin-bottom:3%;
 		 float:left;
+		 position: relative;
 		 }
-		 
+
+.project img {
+			 position:relative;
+			 z-index: -1;
+			 }
+
+.project a {
+			 position:absolute;
+			 width:100%;
+			 height:100%;
+			 top:0;
+			 color: transparent;
+			 margin-right: auto;
+			 margin-left: auto;
+			 z-index: 0;
+			 }
+
+.project a:hover {
+			 position:absolute;
+			 color:white;
+			 background-color: rgba(240, 90, 40, 0.9);
+			 z-index: 0;
+			 }
+
+.project p {
+			 position:absolute;
+			 width: 70%;
+			 height:100%;
+			 padding:10%;
+			 padding-top:20%;
+			 color:transparent;
+			 }
+
+.project p:hover {
+			 font-size: 1.5em;
+			 font-weight: bold;
+			 position:absolute;
+			 color:white;
+			 }
 		 
 /*----------------------- Content Positioning -----------------------*/
 			   	 
@@ -312,6 +362,6 @@ img {
 
 iframe 	{
 		width:100%;
-		height:auto;
+		height:23em;
 		}
 
