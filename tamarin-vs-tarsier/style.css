@@ -232,9 +232,7 @@ em {
 
 @media screen and (max-width:600px) {
     article{ float:none; width:100%; }
-    h2 {font-size:3em;}
-    nav {
-    	font-size: .5em;
-    }
+    h2 {font-size:2em;}
+    nav {font-size: .5em;}
 
 }
