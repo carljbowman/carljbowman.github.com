@@ -196,10 +196,11 @@ p {
            
 #site-header h1 a {
  				  display:block;  
- 				  width:306px; 
- 				  height:123px;  
+ 				  width:90%; 
+ 				  height:120px;  
  				  background:url(images/logo.png) no-repeat top left; 
- 				  text-indent:-9999px;
+ 				  text-indent:9999px;
+ 				  color:transparent;
  				  }	
  				  
 #main-menu li a {

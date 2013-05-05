@@ -97,8 +97,8 @@ header {
 
 nav {
 	position:absolute;
-	width:70%;
-	margin-left:15%;
+	width:74%;
+	margin-left:12%;
 	border-top:2px solid black;
 	border-bottom:2px solid black;
 	
@@ -176,6 +176,18 @@ h2 {
 	
 }
 
+#vs {
+	position:relative;
+	color:#C4C4C4;
+	font-size: .5em;
+	top: -.3em;
+	border-top: 2px double #C4C4C4;
+	border-bottom: 2px double #C4C4C4;
+	padding-left: .5em;
+	padding-right: .4em;
+}
+
+
 img {
 	width:95%;
 	height:95%;
@@ -189,6 +201,7 @@ p, nav {
 
 nav {
 	text-transform:uppercase;
+	font-size: .7em;
 }
 
 p {
@@ -209,4 +222,19 @@ em {
 	font-style:italic;
 }
 
+/* Responsive */
 
+@media screen and (max-width:750px) {
+    article{ max-width:100%; }
+    h2 {font-size:3em;}
+
+}
+
+@media screen and (max-width:600px) {
+    article{ float:none; width:100%; }
+    h2 {font-size:3em;}
+    nav {
+    	font-size: .5em;
+    }
+
+}
