@@ -910,6 +910,7 @@ table {
 	left: 75px;
 	top:45px;
 	z-index: 10;
+	-webkit-transition: 3s ease-in-out;
 }
 
 .back-wheel {
@@ -921,6 +922,31 @@ table {
 	left: 545px;
 	top:45px;
 	z-index: 10;
+	-webkit-transition: 3s ease-in-out;
+}
+
+.front-wheel:hover {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #2a2a2a;
+	border-radius: 50%;
+	left: 75px;
+	top:45px;
+	z-index: 10;
+	-webkit-transform: rotate(-5turn);
+}
+
+.back-wheel:hover {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #2a2a2a;
+	border-radius: 50%;
+	left: 545px;
+	top:45px;
+	z-index: 10;
+	-webkit-transform: rotate(-5turn);
 }
 
 .tire-detail {
