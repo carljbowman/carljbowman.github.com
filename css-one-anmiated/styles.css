@@ -50,6 +50,28 @@ table {
 /*-----------End of Reset-----------*/
 
 
+/*-----------Enviorment-----------*/
+
+.ground {
+	position: absolute;
+	top:424px;
+	width: 3000px;
+	height: 300px;
+	background-image: url('images/dirt.png');
+	background-repeat: repeat;
+	-webkit-animation: enviorment 4s ease-in-out 0s infinite;
+}
+
+.sky {
+	position: absolute;
+	width: 3000px;
+	height: 500px;
+	background-color: #99cff7;
+	z-index: -10;
+	top:-500px;
+}
+
+
 /*-----------Full Shoe-----------*/
 
 .shoe {
@@ -435,7 +457,6 @@ table {
    50%  { -webkit-transform: translate(30px,-200px) rotate(-15deg);}
    70%  { -webkit-transform: translate(350px,-30px) rotate(-25deg);}
    90%  { -webkit-transform: translate(0px,0px) rotate(-10deg);}
-   100%  { -webkit-transform: translate(0,0) rotate(0deg);}
 }
 
 @-webkit-keyframes step-back {
@@ -443,7 +464,6 @@ table {
    30%  { -webkit-transform: rotate(25deg);}
    70%  { -webkit-transform: rotate(15deg);}
    90%  { -webkit-transform: rotate(10deg);}
-   100%  { -webkit-transform: rotate(0deg);}
 }
 
 @-webkit-keyframes pants {
@@ -451,7 +471,12 @@ table {
    30%  { -webkit-transform: rotate(10deg);}
    70%  { -webkit-transform: rotate(-5deg);}
    90%  { -webkit-transform: rotate(0deg);}
-   100%  { -webkit-transform: rotate(0deg);}
+}
+
+@-webkit-keyframes enviorment {
+   0% { -webkit-transform: translate(0,0); }
+   40% { -webkit-transform: translate(-399px,0); }
+   100%  { -webkit-transform: translate(-798px,0);}
 }
 
 
