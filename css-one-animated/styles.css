@@ -468,8 +468,8 @@ table {
 
 @-webkit-keyframes pants {
    0% { -webkit-transform: rotate(0deg); }
-   30%  { -webkit-transform: rotate(10deg);}
-   70%  { -webkit-transform: rotate(-5deg);}
+   30%  { -webkit-transform: rotate(-10deg);}
+   70%  { -webkit-transform: rotate(10deg);}
    90%  { -webkit-transform: rotate(0deg);}
 }
 
