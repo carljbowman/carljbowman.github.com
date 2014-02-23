@@ -454,7 +454,7 @@ table {
 @-webkit-keyframes step-whole {
    0% { -webkit-transform: translate(0,0); }
    30%  { -webkit-transform: translate(-300px,0);}
-   50%  { -webkit-transform: translate(30px,-200px) rotate(-15deg);}
+   50%  { -webkit-transform: translate(30px,-200px) rotate(-35deg);}
    70%  { -webkit-transform: translate(350px,-30px) rotate(-25deg);}
    90%  { -webkit-transform: translate(0px,0px) rotate(-10deg);}
 }
