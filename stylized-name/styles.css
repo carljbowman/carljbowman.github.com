@@ -50,10 +50,12 @@ table {
 /*-----------End of Reset-----------*/
 
 
+
 .name-container {
-	position: fixed;
+	position: absolute;
 	height: 600px;
 	width: 100%;
+	background: -webkit-linear-gradient(#61b3ff 0%, #488ac7 100%);
 }
 
 .name {
@@ -62,23 +64,33 @@ table {
 	height: 30px;
 	width: 300px;
 	
-	text-transform: uppercase;
+	padding-top:200px;
+	
+	text-transform: uppercase;	
+	font-size: 4em;
 	
 	
-	padding-top:300px;
-	
-	font-size: 6em;
-	
-	font-family: "proxima-nova-condensed", sans-serif;
+	font-family: "proxima-nova-condensed", "ProximaNovaCond-BlackIt", sans-serif;
 	font-style: italic;
 	font-weight: 900;
+
+	line-height: .9em;
 	
-	
-	color: #a2a2a2;
-	
-	text-shadow: 2px 2px 0px #f3f3f3;
+	color: #468fd3;
+	text-shadow: 2px 2px 1px #48a3f8;
 	
 	-webkit-transform: rotate(-13deg);
 	
 }
 
+.carl {
+	padding-left: .33em;
+}
+
+.joseph {
+	padding-left: .22em;
+}
+
+body {
+	height: 10000px;
+}
