@@ -449,12 +449,16 @@ p {
 	margin-top: .75em;
 }
 
+.quanity-container {
+	position: relative;
+	top: 10em;
+}
+
 .quanity {
 	position: relative;
 	font-family: "soleil",sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
-	top: 10em;
 	letter-spacing: 2px;
 	text-align: center;
 }
