@@ -55,7 +55,7 @@ table {
 	position: absolute;
 	height: 600px;
 	width: 100%;
-	background: -webkit-linear-gradient(#61b3ff 0%, #488ac7 100%);
+	background: -webkit-linear-gradient(#ff8a57 20%, #e86c37 100%);
 }
 
 .name {
@@ -76,8 +76,8 @@ table {
 
 	line-height: .9em;
 	
-	color: #468fd3;
-	text-shadow: 2px 2px 1px #48a3f8;
+	color: #e96228;
+	text-shadow: 2px 2px 1px #fa7f4b;
 	
 	-webkit-transform: rotate(-13deg);
 	
