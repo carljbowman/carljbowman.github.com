@@ -184,16 +184,18 @@ nav {
 	height: 700px;
 	width: 100%;
 	background-color: red;
-	clear: both;
 	background-image:url('images/paper.jpg');
 }
 
 .chapter-content {
 	position: relative;
-	width: 94%;
+	width: 90%;
 	margin: 0 auto;
 	top:4em;
-	bottom:3em;
+}
+
+.item-container {
+	margin-left: 10%;
 }
 
 .title {
@@ -244,19 +246,18 @@ p {
 }
 
 
-
 /*-----------INTERLUDE 1-----------*/
 
 
 
 .interlude1 {
 	background-image:url('images/interlude1.jpg');	
-	height: 400px;
+	height: 500px;
 }
 
 .interlude1-content {
 	position: relative;
-	top:5em;
+	top:7em;
 }
 
 .interlude-title {
@@ -279,12 +280,12 @@ p {
 	color:#ffffff;
 }
 
-.knots {
+.interlude-container {
 	position: relative;
 	width: 50em;
 	height: 100px;
 	margin: 0 auto;
-	top:2em;
+	top:4em;
 	letter-spacing: 1px;
 	text-align: center;	
 }
@@ -299,7 +300,7 @@ p {
 
 .chapter2 {
 	position: relative;
-	height: 1150px;
+	height: 1070px;
 	width: 100%;
 	background-color: red;
 	clear: both;
@@ -309,16 +310,29 @@ p {
 
 .single-column {
 	position: relative;
-	width: 30%;
+	width: 25%;
 	float: left;
-	margin: 1%;
+	margin: 2%;
+}
+
+.column1 {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.chapter-photo {
+	width: 80%;
+	padding-bottom: 1em;
+	display: block;
+	margin: 0 auto;
 }
 
 .item {
 	position: relative;
 	float: left;
-	margin: 1%;
-	width: 30%;
+	margin: 2%;
+	width: 25%;
+	display: block;
 }
 
 .item img {
@@ -370,22 +384,26 @@ p {
 	
 }
 
+
+
 /*-----------INTERLUDE 2-----------*/
 
 
 
 .interlude2 {
 	background-image:url('images/interlude2.jpg');	
-	height: 400px;
+	height: 500px;
 }
 
-
+.harpoon {
+	padding-top: 2em;
+}
 
 /*-----------CHAPTER 3 : ARTIFACTS-----------*/
 
 .chapter3 {
 	position: relative;
-	height: 1750px;
+	height: 1550px;
 	width: 100%;
 	background-color: red;
 	clear: both;
@@ -393,7 +411,104 @@ p {
 	
 }
 
+/*-----------INTERLUDE 3-----------*/
 
+
+
+.interlude3 {
+	background-image:url('images/interlude3.jpg');	
+	height: 500px;
+}
+
+
+
+/*-----------CHAPTER 4 : THE LOST-----------*/
+
+.chapter4 {
+	position: relative;
+	height: 600px;
+	width: 100%;
+	background-color: red;
+	clear: both;
+	background-image:url('images/paper.jpg');
+	
+}
+
+.crew-photos {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 1em;
+}
+
+.crew-member {
+	position: relative;
+	float: left;
+	margin: 0 auto;
+	padding: 2%;
+	width: 10%;
+}
+
+.crew-photo {
+	position: relative;
+	margin: auto;
+	display: block;
+	width: 90%;
+}
+
+.crew-name {
+	font-family: "soleil",sans-serif;
+	font-size: 11px;
+	text-align: center;
+	padding-top: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color:#686868;
+}
+
+.crew-title {
+	font-family: "clavo",sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+	color:#686868;
+}
+
+
+/*-----------CONCLUSION-----------*/
+
+.conclusion-image{	
+	background-image:url('images/preface-background.jpg');	
+	height: 500px;
+}
+
+.conclusion {
+	position: relative;
+	width: 30em;
+	height: auto;
+	margin: 0 auto;
+	top:170px;
+}
+
+.waves {
+	display: block;
+	margin: 0 auto;
+}
+
+.anchor {
+	display: block;
+	margin: 0 auto;
+}
+
+.quote {
+	padding-bottom: 2em;
+	padding-top: 2em;
+	color: white;
+	text-align: center;
+	line-height: 1.7em;
+	width: 20em;
+	margin: 0 auto;
+}
 
 /*-----------PRODUCT DETAIL-----------*/
 
