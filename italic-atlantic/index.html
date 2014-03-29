@@ -5,8 +5,10 @@
   <title>Italic Atlantic</title>
   <link href="styles.css" rel="stylesheet" media="all" />
   
-  <script src='shirts.js'></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+  <script src='items.js'></script>
   <script src='application.js'></script>
+  <script src='smooth-scroll.js'></script>
   
   
   <script type="text/javascript" src="//use.typekit.net/jqn1hgv.js"></script>
@@ -19,11 +21,11 @@
 	
 	<section class="anchor-links">
 		<ol class="nav-elements">
-		 	<li><a>Beginnings</a><br>Ch. I</li>
-		 	<li><a>Apparel</a><br>Ch. II</li>
+		 	<li><a data-scroll href="#chapter1">Beginnings</a><br>Ch. I</li>
+		 	<li><a data-scroll href="#chapter2">Apparel</a><br>Ch. II</li>
 		 	<li class="logo-container"><img id="logo" src="images/logo.png" alt="italic atlantic logo"></li>
-		 	<li><a>Artifacts</a><br>Ch. III</li>
-		 	<li><a>The Lost</a><br>Ch. IV</li>
+		 	<li><a data-scroll href="#chapter3">Artifacts</a><br>Ch. III</li>
+		 	<li><a data-scroll href="#chapter4">The Lost</a><br>Ch. IV</li>
 		</ol>
 	</section>
 	
@@ -43,7 +45,7 @@
  
  </section>
  
- <section class="chapter1">
+ <section id="chapter1">
 	 <div class="chapter-content">
 	 	<h1 class="title">The Beginnings</h1>
 	 	<h2 class="chapter-number">Chapter I.</h2>
@@ -78,13 +80,13 @@
  	</div>
  </div>
  
-<section class="chapter2">
+<section id="chapter2">
 	 <div class="chapter-content item-container">
 	 
-	 	<div class="item ">
-		 	<img src="images/shirts/naut.jpg" alt="Nautilus t-shirt">
+	 	<div class="item "data-product-id='nautilus'>
+		 	<img src="images/shirts/naut.jpg" alt="Nautilus t-shirt" >
 		 	<div class="item-info">
-			 	<h2 class="price">$25.00</h2>
+			 	<h2 class="price">$25</h2>
 			 	<h1 class="name">Nautilus</h1>
 			 	<h3 class="count">5/30</h3>
 		 	</div>
@@ -99,37 +101,37 @@
 			</div>
 	 	</div>
 	 	
-	 	<div class="item">
+	 	<div class="item" data-product-id='tridents'>
 		 	<img src="images/shirts/tridents.jpg" alt="Tridents t-shirt">
 		 	<div class="item-info">
-			 	<h2 class="price">$25.00</h2>
+			 	<h2 class="price">$25</h2>
 			 	<h1 class="name">Tridents</h1>
-			 	<h3 class="count">16/30</h3>
+			 	<h3 class="count">17/30</h3>
 		 	</div>
 	 	</div>	
 	 	
-	 	<div class="item">
+	 	<div class="item" data-product-id='lifeguard'>
 		 	<img src="images/shirts/hell.jpg" alt="Lifeguard t-shirt">
 		 	<div class="item-info">
-			 	<h2 class="price">$25.00</h2>
+			 	<h2 class="price">$25</h2>
 			 	<h1 class="name">Lifegaurd</h1>
-			 	<h3 class="count">23/30</h3>
+			 	<h3 class="count">28/30</h3>
 		 	</div>
 	 	</div>
 	 	
-	 	<div class="item">
+	 	<div class="item" data-product-id='anchor'>
 		 	<img src="images/shirts/anchor.jpg" alt="Anchor t-shirt">
 		 	<div class="item-info">
-			 	<h2 class="price">$25.00</h2>
-			 	<h1 class="name">Lifegaurd</h1>
-			 	<h3 class="count">23/30</h3>
+			 	<h2 class="price">$25</h2>
+			 	<h1 class="name">Anchor</h1>
+			 	<h3 class="count">13/30</h3>
 		 	</div>
 	 	</div>
 	 	
-	 	<div class="item">
+	 	<div class="item" data-product-id='crest'>
 		 	<img src="images/shirts/crest.jpg" alt="Anchor t-shirt">
 		 	<div class="item-info">
-			 	<h2 class="price">$25.00</h2>
+			 	<h2 class="price">$25</h2>
 			 	<h1 class="name">IA Crest</h1>
 			 	<h3 class="count">23/30</h3>
 		 	</div>
@@ -149,13 +151,13 @@
  	</div>
 </div>
  
- <section class="chapter3">
+ <section id="chapter3">
 	 <div class="chapter-content item-container">
 	 
 	 	<div class="item">
 		 	<img src="images/artifacts/artifact.jpg" alt="Pins/Buttons">
 		 	<div class="item-info">
-			 	<h2 class="price">$1.00</h2>
+			 	<h2 class="price">$1</h2>
 			 	<h1 class="name">Pins</h1>
 		 	</div>
 	 	</div>
@@ -172,7 +174,7 @@
 	 	<div class="item">
 		 	<img src="images/artifacts/artifact.jpg" alt="40 ounce">
 		 	<div class="item-info">
-			 	<h2 class="price">$100.00</h2>
+			 	<h2 class="price">$100</h2>
 			 	<h1 class="name">40 oz</h1>
 			 	<h3 class="count">1/1</h3>
 		 	</div>
@@ -181,7 +183,7 @@
 	 	<div class="item">
 		 	<img src="images/artifacts/artifact.jpg" alt="Sunset Print">
 		 	<div class="item-info">
-			 	<h2 class="price">$10.00</h2>
+			 	<h2 class="price">$10</h2>
 			 	<h1 class="name">Sunset Print</h1>
 			 	<h3 class="count">4/10</h3>
 		 	</div>
@@ -190,7 +192,7 @@
 	 	<div class="item">
 		 	<img src="images/artifacts/artifact.jpg" alt="Post Card Print">
 		 	<div class="item-info">
-			 	<h2 class="price">$5.00</h2>
+			 	<h2 class="price">$5</h2>
 			 	<h1 class="name">Post Card Print</h1>
 			 	<h3 class="count">99/100</h3>
 		 	</div>
@@ -199,7 +201,7 @@
 	 	<div class="item">
 		 	<img src="images/artifacts/artifact.jpg" alt="Shark Jaw">
 		 	<div class="item-info">
-			 	<h2 class="price">$50.00</h2>
+			 	<h2 class="price">$50</h2>
 			 	<h1 class="name">Shark Jaw</h1>
 			 	<h3 class="count">1/1</h3>
 		 	</div>
@@ -208,7 +210,7 @@
 	 	<div class="item">
 		 	<img src="images/artifacts/artifact.jpg" alt="Crew Camera">
 		 	<div class="item-info">
-			 	<h2 class="price">$175.00</h2>
+			 	<h2 class="price">$175</h2>
 			 	<h1 class="name">Crew Camera</h1>
 			 	<h3 class="count">1/1</h3>
 		 	</div>
@@ -217,7 +219,7 @@
 	 	<div class="item">
 		 	<img src="images/artifacts/artifact.jpg" alt="Tatoos">
 		 	<div class="item-info">
-			 	<h2 class="price">$5.00</h2>
+			 	<h2 class="price">$5</h2>
 			 	<h1 class="name">Tatoos</h1>
 			 	<h3 class="count">32/50</h3>
 		 	</div>
@@ -243,7 +245,7 @@
  	</div>
 </div>
 
-<section class="chapter4">
+<section id="chapter4">
 	 <div class="chapter-content">
 	 		<h1 class="title">The Lost</h1>
 	 		<h2 class="chapter-number">Chapter IV.</h2> 
@@ -295,29 +297,73 @@
 	 		
 	 		<div class="column-container">
 	 			<div class="column">
-		 			<p>Here is one to the those that perished as a crew chasing a dream as a crew. Their sails torn and ship gone.</p>
+		 			<p>Here is one to the those that perished as a crew chasing a dream as a crew. Their sails 						torn and ship gone.</p>
 		 		</div>
 		 		<div class="column">
-			 		<p>Rips can be mended with some twine and bottles can be broken on ships. The real journey has only begun.</p>
+			 		<p>Rips can be mended with some twine and bottles can be broken on ships. The real journey 						has only begun.</p>
 			 	</div>
 	 		</div>	
 	 </div>
  </section>
  
- <section class="conclusion-image background-image">
+<section class="conclusion-image background-image">
 	 
 	 <section class="conclusion">
 	 	<img class="waves" src="images/waves.png" alt="Waves">
 	 	<p class="quote">... for there is no folly of the beast of the earth 
-which is not infinitely outdone 
-by the madness of men
-<br><br>
-—Herman Melville, Moby Dick </p>
+		 	which is not infinitely outdone 
+		 	by the madness of men
+		 	<br><br>
+		 	—Herman Melville, Moby Dick </p>
 	 <img class="anchor" src="images/anchor.png" alt="Anchor">
 	 </section>
- 
- </section>
- 
+
+</section>
+
+
+
+<!-- Item Container --> 
+
+<div class="overlay hide"></div>
+
+<div class="details hide">
+	
+	<section id="details-image">
+		<img id="detail-image" src="images/shirts/anchor.jpg" alt="Image Detail">
+	</section>
+	
+	<section id="details-information">
+		<h2 id='detail-title'>Anchor</h2>
+		<h2 id='detail-designer'>Designed by Carl Bowman</h2>
+		
+		<div id="count">
+			<div class="detail-dash"></div>
+			<h2 id="detail-count">13/30 Available</h2>
+			<div class="detail-dash"></div>
+		</div>
+		
+		<div id="selectors">
+			<select id='detail-varient'>
+				<option value='1'>Ivory</option>
+				<option value='2'>Heather</option>
+			</select>
+			
+			<select id='detail-sizes-quanity'>
+				<option value='1'>Small</option>
+				<option value='2'>Medium</option>
+				<option value='3'>Large</option>
+			</select>
+		</div>
+		
+		<h2 id='detail-price'>$25</h2>
+		<h2 id='add-to-cart'>Add to Cart</h2>
+		<h2 id='limited'>Limited One per Customer</h2>
+		
+	</section>
+
+</div>
+
+
   
 </body>
 </html> 

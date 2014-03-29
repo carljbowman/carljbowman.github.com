@@ -1,14 +1,13 @@
-var Shirts = {
+var Items = {
 	
 	nautilus: {
     	  title: "Nautilus",
 		  price: 25,
-		  images: ["images/shirts/naut-ivory.jpg", 
-		           "images/shirts/naut-black.jpg"],
+		  images: ["images/shirts/naut-ivory.jpg"],
 		  designer: "Evan Peebles",
-		  count: "13",
+		  count: "5",
 		  sizes: ["Small", "Medium", "Large"],
-		  colors: ["Ivory", "Black"]
+		  varient: ["Ivory", "Black"]
 		  },
 		  
 	anchor: {
@@ -17,32 +16,31 @@ var Shirts = {
 		  images: ["images/shirts/anchor-ivory.jpg",
 		  		   "images/shirts/anchor-heather.jpg"],
 		  designer: "Carl Bowman",
-		  count: "17",
+		  count: "13",
 		  sizes: ["Small", "Medium", "Large"],
-		  colors: ["Ivory", "Heather"]
+		  varient: ["Ivory", "Heather"]
 		  },
 		  
 	crest: {
     	  title: "IA Crest",
 		  price: 25,
 		  images: ["images/shirts/crest-black.jpg",
-		  		   "images/shirts/crest-heather.jpg",
 		  		   "images/shirts/crest-ivory.jpg"],
 		  designer: "Ian Cameron",
-		  count: "20",
+		  count: "23",
 		  sizes: ["Small", "Medium", "Large"],
-		  colors: ["Black", "Heather", "Ivory"]
+		  varient: ["Black", "Heather", "Ivory"]
 		  },
 		  
 	tridents: {
     	  title: "Tridents",
 		  price: 25,
 		  images: ["images/shirts/tridents-heather.jpg",
-		  		   "images/shirts/tridents-ivory.jpg"],
-		  designer: "Carl Bowman",
-		  count: "20",
+		  		   "images/shirts/tridents-black.jpg"],
+		  designer: "Evan Peebles",
+		  count: "17",
 		  sizes: ["Small", "Medium", "Large"],
-		  colors: ["Heather", "Ivory"]
+		  varient: ["Heather", "Ivory"]
 		  },
 		  
 	lifeguard: {
@@ -50,13 +48,14 @@ var Shirts = {
 		  price: 25,
 		  images: ["images/shirts/hell-black-back.jpg",
 		  		   "images/shirts/hell-black-front.jpg",
-		  		   "images/shirts/hell-ivory-back.jpg",
-		  		   "images/shirts/hell-ivory-front.jpg",],
+		  		   "images/shirts/hell-heather-back.jpg",
+		  		   "images/shirts/hell-heather-front.jpg",],
 		  designer: "Carl Bowman",
-		  count: "20",
+		  count: "28",
 		  sizes: ["Small", "Medium", "Large"],
-		  colors: ["Black", "Ivory"]
+		  varient: ["Black", "Ivory"]
 		  }
+		  
 	
 };
 
