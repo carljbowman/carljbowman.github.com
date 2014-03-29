@@ -3,12 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <title>Italic Atlantic</title>
-  <link href="styles.css" rel="stylesheet" media="all" />
+  <link href="css/styles.css" rel="stylesheet" media="all" />
+  <link href="css/showup.css" rel="stylesheet" media="all" />
   
   <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
-  <script src='items.js'></script>
-  <script src='application.js'></script>
-  <script src='smooth-scroll.js'></script>
+  <script src='js/items.js'></script>
+  <script src='js/application.js'></script>
+  <script src='js/smooth-scroll.js'></script>
+  
+  <script src='js/showup.js'></script>
   
   
   <script type="text/javascript" src="//use.typekit.net/jqn1hgv.js"></script>
@@ -17,13 +20,13 @@
 </head>
 <body>
   
- <nav class="navigation">
+ <nav class="navigation navbar">
 	
 	<section class="anchor-links">
 		<ol class="nav-elements">
 		 	<li><a data-scroll href="#chapter1">Beginnings</a><br>Ch. I</li>
 		 	<li><a data-scroll href="#chapter2">Apparel</a><br>Ch. II</li>
-		 	<li class="logo-container"><img id="logo" src="images/logo.png" alt="italic atlantic logo"></li>
+		 	<li class="logo-container"><a data-scroll href="#preface-image"><img id="logo" src="images/logo.png" alt="italic atlantic logo"></a></li>
 		 	<li><a data-scroll href="#chapter3">Artifacts</a><br>Ch. III</li>
 		 	<li><a data-scroll href="#chapter4">The Lost</a><br>Ch. IV</li>
 		</ol>
@@ -33,7 +36,7 @@
  
  
  
- <section class="preface-image background-image">
+ <section id="preface-image" class="background-image">
 	 
 	 <section class="preface">
 	 	<div class="dash"></div>

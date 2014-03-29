@@ -25,12 +25,7 @@ function hideProduct(){
 // When the page loads, add in our event handlers
 $(function() {
 
-smoothScroll.init({
-	speed: 800, 
-	easing: 'easeInOutQuint', // Easing pattern to use
-	updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-	offset: 65
-});
+
 
 $(".item").click(function() {
 	var key = $(this).data("product-id");
@@ -41,6 +36,39 @@ $(".item").click(function() {
 $(".overlay").click(function() {
 	hideProduct();
 	$('.overlay').css( 'cursor', 'pointer' );
+});
+
+
+// Height Adjustment 
+
+var heightCH2 = $(window).width() * .83; 
+	$("#chapter2").css("height", heightCH2);
+	
+var heightCH3 = $(window).width() * 1.2; 
+	$("#chapter3").css("height", heightCH3);
+
+window.onresize = function() {
+	var heightCH2 = $(window).width() * .83; 
+	var heightCH3 = $(window).width() * 1.2; 
+	$("#chapter2").css("height", heightCH2);
+	$("#chapter3").css("height", heightCH3);
+}
+
+
+// Smooth Scroll Plugin
+
+smoothScroll.init({
+	speed: 1000, 
+	easing: 'easeInOutQuint', 
+	updateURL: false, 
+	offset: 65
+});
+
+// Navigation Auto Hide on Scroll
+
+$().showUp('.navbar', {
+	upClass: 'navbar-show',
+	downClass: 'navbar-hide'
 });
 
 
