@@ -64,31 +64,18 @@ nav {
 	z-index: 10;
 }
 
-.logo-container {
-	position: relative;
-	width: 16%;
-	height: 66px;	
-	left:40px;
-	float:left;
-	
-}
 
 #logo {
-	position: relative;
-	height: 28px;
-	width: 93px;
-	margin: auto;
+	margin: 0 auto;
 	display: block;
-	top:20px;
+	width: 93px;
 }
 
 .anchor-links {
-	position: relative;
-	float: left;
-	width: 10%;
-	height: auto;
-	left:3em;	
+	position: relative;	
 	top:23px;
+	margin: 0 auto;
+	width: 50em;
 }
 
 .nav-elements a {
@@ -98,6 +85,13 @@ nav {
 	text-transform: uppercase;
 	color:#2f2f2f;
 	letter-spacing: 1px;
+}
+
+.nav-elements li {
+	position: relative;
+	float: left;
+	padding-left: 6em;
+
 }
 
 .nav-elements {
