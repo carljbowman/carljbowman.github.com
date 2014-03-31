@@ -35,7 +35,10 @@ $(".item").click(function() {
 
 $(".overlay").click(function() {
 	hideProduct();
-	$('.overlay').css( 'cursor', 'pointer' );
+});
+
+$("#detail-close").click(function() {
+	hideProduct();
 });
 
 
@@ -73,7 +76,7 @@ $().showUp('.navbar', {
 
 
 //Cursor to Pointer on Elements
-$('.item, .overlay, .detail-selector, #add-to-cart').css( 'cursor', 'pointer' );
+$('.item, .overlay, .detail-selector, #add-to-cart, #detail-close').css( 'cursor', 'pointer' );
 
 });
 
