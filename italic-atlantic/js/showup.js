@@ -33,12 +33,17 @@
     });
 
     // Toggle visibility of target on click
-    $(btnHideShow).click(function () {
+    $("#add-to-cart").click(function () {
       if (target.hasClass(down)) {
         target.removeClass(down).addClass(up);
-      } else {
-        target.removeClass(up).addClass(down);
-      }
+      } 
+    });
+    
+    // Toggle visibility of target on click
+    $("#nav-hover").mouseover(function () {
+      if (target.hasClass(down)) {
+        target.removeClass(down).addClass(up);
+      } 
     });
   };
 })( jQuery );

@@ -13,23 +13,30 @@
   
   <script src='js/showup.js'></script>
   
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script src="https://checkout.stripe.com/checkout.js">
   
   <script type="text/javascript" src="//use.typekit.net/jqn1hgv.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   
 </head>
 <body>
+
+<div id="nav-hover"></div>
   
  <nav class="navigation navbar">
 	
 	<section class="anchor-links">
-		<ol class="nav-elements">
+		<ol class="nav-elements">	
+		 	<li class="logo-container"><a data-scroll href="#preface-image"><img id="logo" src="images/logo.png" alt="italic atlantic logo"></a></li>
 		 	<li><a data-scroll href="#chapter1">Beginnings</a><br>Ch. I</li>
 		 	<li><a data-scroll href="#chapter2">Apparel</a><br>Ch. II</li>
-		 	<li class="logo-container"><a data-scroll href="#preface-image"><img id="logo" src="images/logo.png" alt="italic atlantic logo"></a></li>
 		 	<li><a data-scroll href="#chapter3">Artifacts</a><br>Ch. III</li>
 		 	<li><a data-scroll href="#chapter4">The Lost</a><br>Ch. IV</li>
 		</ol>
+		
+		<div id="cart"><img src="images/cargo.png" alt="Cargo"><span id="cargo">No Cargo</span><br><span id="total-price">$0.00</span></div>
+		
 	</section>
 	
  </nav>
@@ -336,7 +343,7 @@
 	</section>
 	
 	<section id="details-information">
-		<img id="detail-close" src="images/close.png" alt="Image Detail">
+		<img id="detail-close" src="images/close.png" alt="close">
 		<h2 id='detail-title'>Anchor</h2>
 		<h2 id='detail-designer'>Designed by Carl Bowman</h2>
 		
@@ -352,7 +359,7 @@
 				<option value='2'>Heather</option>
 			</select>
 			
-			<select id='detail-sizes-quanity'>
+			<select id='detail-sizes'>
 				<option value='1'>Small</option>
 				<option value='2'>Medium</option>
 				<option value='3'>Large</option>
@@ -367,6 +374,34 @@
 
 </div>
 
+<div class="cart hide">
+	<div id="cart-titling">
+		<img id="cart-cargo-img" src="images/cargo.png" alt="Cargo">
+		<h2>My Cargo<h2>
+		<img id="cart-close" src="images/close.png" alt="close">
+	</div>
+	
+	<div id="cart-items">
+		<div class="cart-item">
+			<div class="cart-img-crop">
+				<img class="cart-img" src="images/shirts/anchor.jpg" alt="anchor">
+			</div>
+			<div class="cart-item-details">
+				<h2 class="cart-item-title">Nautalis</h2>
+				<h2 class="cart-item-varient">Size: Large</h2>
+				<h2 class="cart-item-varient">Color: Ivory</h2>
+				<h2 class="cart-item-price">Price: $25 x Quantity: 1</h2>
+				<h2 class="cart-item-subtotal">Subtotal $25.00</h2>
+			</div>		
+		</div>
+		
+	</div>
+	
+	<div id="total">
+		<h2 id="cart-item-total">Total: $25.00</h2>
+		<h2 id="checkout">Checkout</h2>
+	</div>
+</div>
 
   
 </body>
