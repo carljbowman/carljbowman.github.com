@@ -17,7 +17,7 @@ function checkOut() {
 
   var handler = StripeCheckout.configure({
     key: stripeKey,
-    image: src='../images/captain.png',
+    image: 'http://carljbowman.github.io/italic-atlantic/images/captainSm.png',
     token: function(token, args) {
       $.post("/buy", {
         token: token.id,
