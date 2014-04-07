@@ -564,8 +564,8 @@ p {
   left:0px;
   width:100%;
   height:100%;
-  background-color: #696969;
   opacity: .8;
+  background-color: #686868;
 }
 
 .details {
@@ -579,10 +579,13 @@ p {
   height:550px;
   background-color: white;
   z-index: 2;
+  -webkit-transition: top 5s;
 }
+
 
 .hide {
 	display: none;
+	-webkit-trasition: all 0.5s ease;	
 }
 
 #details-image {
@@ -776,6 +779,13 @@ select {
 	width: 94%;
 }
 
+#cart-items p {
+	position: relative;
+	text-align: center; 
+	top:3em;
+	font-size: 30px;
+}
+
 .cart-item {
 	width: 94%;
 	padding-top:.5em;
@@ -839,6 +849,7 @@ select {
 	float: right;
 	top:20px;
 	letter-spacing: .5px;
+	left: 33px;
 }
 
 #total {

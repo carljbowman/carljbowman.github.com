@@ -55,16 +55,26 @@ function hideCart(){
 
 
 function editCart() {	
-	$("#cart-item-total").text("Total: $"+totalCost);
+	$("#cart-item-total").text("Total: $"+totalCost+".00");
 	$("#cart-items").empty();	
 	
+	if (totalQuantity <= 0) {
+		$("#cart-item-total").hide();
+		$("#total").hide();
+		$("#cart-items").append("<p>Ayyyye! Ye' got no Cargo.</p>");
+	}
+	
+	else {
+	$("#cart-item-total").show();
+	$("#total").show();
+
 	for(var key in Cart) {
      // Lookup the value from the object
      var shirt = Items[key]; 
 	 
 	 $("#cart-items").append("<div class='cart-item'><div class='cart-img-crop'><img class='cart-img' src='"+shirt.images[0]+"' alt='"+key+"'></div><div class='cart-item-details'><h2 class='cart-item-title'>"+shirt.title+"</h2><h2 class='cart-item-varient'>Size: "+shirt.sizes[0]+"</h2><h2 class='cart-item-varient'>Color: "+shirt.varient[0]+"</h2><h2 class='cart-item-price'>Price: $"+shirt.price+" x Quantity: 1</h2><h2 class='cart-item-subtotal'>Subtotal $25.00</h2></div></div>");
 	 
-   }
+   }}
 
 };
 
