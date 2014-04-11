@@ -35,6 +35,7 @@ function checkOut() {
     description: description,
     amount: amount
   });
+ 
 
 }
 

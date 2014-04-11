@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------End of Reset-----------*/
+
+
+body {
+	background: #f4f4f4;
+}
+
+#info {
+	position: fixed;
+	width: 20%;
+}
+
+#shots {
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	float: right;
+}
+
+.shot-container {
+	position: relative;
+	width: 31.333333%;
+	float: left;
+	background: #ffffff;
+	margin: 1%;	
+}
+
+
+
+
+.designer {
+	position: relative;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	letter-spacing: .5px;
+	color: #505050;
+	text-transform: uppercase;
+	float:left;
+	left: 4%;
+	padding:10px 0px 10px 0px;
+}
+
+.title {
+	position: relative;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	color: #505050;
+	text-align: center;
+	top:-20px;
+}
+
+hover {
+	top:10px;
+}
+
+.views {
+	position: relative;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	letter-spacing: .5px;
+	color: #505050;
+	float: right;
+	right: 8%;
+	padding:10px 0px 10px 0px;
+}
+
+.views-image {
+	position: relative;
+	width: 16px;
+	height: 16px;
+	float: right;
+	top:8px;
+	right: 4%;
+}
+
+.image {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+
