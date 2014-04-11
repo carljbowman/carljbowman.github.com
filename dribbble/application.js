@@ -19,7 +19,8 @@ function createShot(shot, i) {
      
      $(shotContainer).click(function() {
 		var key = $(this).data("shot-key");
-		$("#info").text(key.title);
+		alert(key, key.title)
+		// $("#info").text(key.title);
 	}); 
 	 
 };
