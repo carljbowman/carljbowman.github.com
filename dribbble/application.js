@@ -18,14 +18,10 @@ function createShot(shot, i) {
      $(shotContainer).append(image);
      
      $(shotContainer).click(function() {
-		var key = $(this).data("shot-key");
-		alert(key, key.title)
-		// $("#info").text(key.title);
+		$("#info").empty().append(title);
 	}); 
 	 
 };
-
-
 
 // When the page loads, add in our event handlers
 $(function() {

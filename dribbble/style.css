@@ -57,6 +57,7 @@ body {
 #info {
 	position: fixed;
 	width: 20%;
+	background: red;
 }
 
 #shots {
@@ -68,10 +69,9 @@ body {
 
 .shot-container {
 	position: relative;
-	width: 31.333333%;
+	width: 33.333333%;
 	float: left;
 	background: #ffffff;
-	margin: 1%;	
 }
 
 
@@ -95,7 +95,7 @@ body {
 	font-size: 14px;
 	color: #505050;
 	text-align: center;
-	top:-20px;
+	top:40px;
 }
 
 hover {
