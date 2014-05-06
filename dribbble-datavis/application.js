@@ -19,7 +19,6 @@ $(function() {
  	// RenderGraph 
  	
  	var renderGraph = function(data) {
-	 
 	 	
 	 	svg.selectAll("rect")
 			   .data(data)

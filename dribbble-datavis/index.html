@@ -5,19 +5,26 @@
   		<meta charset="utf-8">
   		<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
   		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  		<link href='style/styles.css' rel='stylesheet'/>     			
+  		<script src="fonts.js" charset="utf-8"></script>
+  		<link href='style/styles.css' rel='stylesheet'/>
+  		     			
   </head>  		
   		
   <body>
   	<div id=datavis></div>
   	
   	<script>
-  		// Typface Array
-  		var types = ['helvetica', 'gotham', 'futura', 'lato', 'knockout', 'din', 'garamond', 'baskerville', 'caslon'];
+  		// Data Set
+  		var data = fonts.helvetica; 
+  		
+  		// Scales
+  		var yScale = d3.scale.linear()
+                     .domain([0, d3.max(data, function(d) { return d.adjusted; })])
+                     .range([0, h]);
   		
 	  	// Width and Height of SVG
 	  	var w = 960;
-	  	var h = 30000;
+	  	var h = 400;
 	  	var padding=20;
 	
 	  	// Creating SVG 
@@ -27,39 +34,23 @@
  			 	svg.attr("width", w)
  			 	   .attr("height", h);
 	   
- 	    // RenderGraph 
- 	
- 		var renderGraph = function(data) {
- 			console.log(data);
- 			
- 			
- 			
- 			
- 			
- 			
- 			
- 			
-	 		svg.selectAll("text")
-			   .data(data)
-			   .enter()
-			   .append("text")
-			   .text(function(d, i){
-				   for( var j=0; d.tags.length > j; j++){
-					   var tag = d.tags[j];
-					   if (tag===types[0] || tag===types[1] || tag===types[2] || tag===types[3]|| tag===types[4] 
-					   || tag===types[5] || tag===types[6] || tag===types[7] || tag===types[8]) {
-						   return i + " " + tag + " " + d.created_on + " " + d.likes_count;
-					   }					   
-				   };
-			   })
-			   .attr("y", function(d, i){
-				   return (i+1) * padding;
-			   });
-			  
- 		}	
-  	</script>
-  	
-  	<script src='http://design-trends.herokuapp.com/shots.js?limit=2000&amp;order=created_on&amp;like_count>=0&amp;tags=helvetica,futura, gotham,lato,knockout,din,garamond,baskerville,caslon&amp;callback=renderGraph&amp;fields=image_teaser_url,created_on,tags,likes_count'></script>  
+ 	    // RenderGraph 	
+ 								
+	 		svg.selectAll("rect")
+	 			.data(data)
+	 			.enter()
+	 			.append("rect")
+	 				.attr("x", function(d, i) {
+		 				return i * (w / data.length);
+		 			})
+	 				.attr("y", function(d) {
+		 				return h - d.adjusted/4;
+		 			})
+	 				.attr("width", w/data.length-2)
+	 				.attr("height", function(d) {
+		 					return d.adjusted/4;
+		 			});	
+  	</script>  
   	
   </body>
   

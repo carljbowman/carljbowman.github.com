@@ -49,3 +49,39 @@ table {
 
 /*-----------End of Reset-----------*/
 
+
+/*-----------Helvetica-----------*/
+.line0 {
+  fill: none;
+  stroke: #239b31;
+  stroke-width: 1.5px;
+}
+
+/*-----------Futura-----------*/
+.line1 {
+  fill: none;
+  stroke: #ffd539;
+  stroke-width: 1.5px;
+}
+
+/*-----------Knockout-----------*/
+.line2 {
+  fill: none;
+  stroke: #239c35;
+  stroke-width: 1.5px;
+}
+
+/*-----------Din-----------*/
+.line3 {
+  fill: none;
+  stroke: #1c8eb0;
+  stroke-width: 1.5px;
+}
+
+/*-----------OpenSans-----------*/
+.line4 {
+  fill: none;
+  stroke: #981cb0;
+  stroke-width: 1.5px;
+}
+

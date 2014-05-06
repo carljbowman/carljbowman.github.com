@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  		<title>Dribbble Datavis</title>
+  		<meta charset="utf-8">
+  		<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+  		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  		<script src="fonts.js" charset="utf-8"></script>
+  		<link href='style/styles.css' rel='stylesheet'/>
+  		     			
+  </head>  		
+  		
+  <body>
+  	<div id=datavis></div>
+  	
+  	<script>
+  		
+  		//Data
+  		var names = ['opensans', 'futura', 'knockout', 'din', 'helvetica'];
+  		
+	  	// Width and Height of SVG
+	  	var w = 960;
+	  	var h = 550;
+	  	var padding=20;
+	  	
+	  	
+	  	// Scales
+	  	var x = d3.time.scale()
+	  			.range([padding, w]);
+
+	  	var y = d3.scale.linear()
+	  			.range([h-200, padding]);
+	  			
+	  	x.domain(d3.extent(fonts.helvetica, function(d) { return new Date(d.month); }));
+	  	y.domain(d3.extent(fonts.helvetica, function(d) { return d.adjusted; }));
+	
+	  	// Creating SVG Graph
+	  	var svg = d3.select("#datavis")
+ 			 		.append("svg");
+ 			 	
+ 			 	svg.attr("width", w)
+ 			 	   .attr("height", h)
+ 			 	   .attr("padding-bottom", 100);
+ 			 	   	 	   
+	   
+ 	    // RenderGraph 	
+ 		var line = d3.svg.line()
+ 			.x(function(d) { return x(new Date(d.month)); })
+ 			.y(function(d) { return y(d.adjusted); });
+		 		
+ 		for (var i =0 ; i < names.length; i++){
+			var name = names[i];
+			var data = fonts[name];
+			svg.append("path")
+				.datum(data)
+				.attr("class", "line"+i)
+				.attr("d", line)
+				.attr("id", name);
+	}	 		
+		
+	function toggleOn(name){
+		svg.select("#"+name).style("display","")
+	}	
+	
+	function toggleOff(name){
+		svg.select("#"+name).style("display","none")
+	}
+			
+  	</script>  
+  	
+  </body>
+  
+  
+</html>
