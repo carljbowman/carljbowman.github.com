@@ -49,39 +49,245 @@ table {
 
 /*-----------End of Reset-----------*/
 
+body {
+	font-family: "open-sans", "open sans" ,sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	background-color: #ffffff;
+}
 
-/*-----------Helvetica-----------*/
-.line0 {
+header {
+	position: relative;
+	top:50px;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 700;
+	color: #e5e5e5;
+}
+
+#datavis {
+	position: relative;
+	margin: 0 auto;
+	top:110px;
+	width: 960px;
+	height: 350px;
+  	font-size: 10px;
+  	fill:#BEBEBE;
+}
+
+.key {
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+.axis path,
+.axis line {
   fill: none;
-  stroke: #239b31;
-  stroke-width: 1.5px;
+  stroke: #BEBEBE;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.y.axis path {
+  display: none;
+}
+
+
+
+/*-----------Open Sans-----------*/
+.line-opensans {
+  fill: none;
+  stroke: #EF5029;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+ 
+}
+
+.line-opensans-hide {
+  fill: none;
+  stroke: #EF5029;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 0; 
+  -webkit-transition: opacity 1s; 
 }
 
 /*-----------Futura-----------*/
-.line1 {
+.line-futura {
   fill: none;
-  stroke: #ffd539;
-  stroke-width: 1.5px;
+  stroke: #4DB788;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+}
+
+.line-futura-hide {
+  fill: none;
+  stroke: #4DB788;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 0; 
+  -webkit-transition: opacity 1s; 
 }
 
 /*-----------Knockout-----------*/
-.line2 {
+.line-knockout {
   fill: none;
-  stroke: #239c35;
-  stroke-width: 1.5px;
+  stroke: #FFCF48;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+}
+
+.line-knockout-hide {
+  fill: none;
+  stroke: #FFCF48;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 0; 
+  -webkit-transition: opacity 1s; 
 }
 
 /*-----------Din-----------*/
-.line3 {
+.line-din {
   fill: none;
-  stroke: #1c8eb0;
-  stroke-width: 1.5px;
+  stroke: #1FCECB;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
 }
 
-/*-----------OpenSans-----------*/
-.line4 {
+.line-din-hide {
   fill: none;
-  stroke: #981cb0;
-  stroke-width: 1.5px;
+  stroke: #1FCECB;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 0; 
+  -webkit-transition: opacity 1s; 
 }
+
+/*-----------Helvetica-----------*/
+.line-helvetica {
+  fill: none;
+  stroke: #1CA9C9;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+}
+
+.line-helvetica-hide {
+  fill: none;
+  stroke: #1CA9C9;
+  stroke-width: 2px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  opacity: 0; 
+  -webkit-transition: opacity 1s; 
+}
+
+
+/*-----------Toggles-----------*/
+
+
+#dashboard {
+	position: relative;
+	top:80px;
+	width: 100%;
+	height: 200px;
+	z-index: 10;
+	
+}
+
+#toggles {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	top:40px;
+}
+
+.typeface {
+	position: relative;
+	float: left;
+	width: 15%;
+	height: 50px;
+	margin: 1em;
+}
+
+.typeface p {
+	position: relative;
+	text-align: center;
+	padding-top:14px;
+	border-top: 1px solid #f7f7f7;
+	color: #646464;
+	font-size: 14px;
+}
+
+.toggle-bg {
+	position: relative;
+	width: 35px;
+	height: 20px;
+	background: #ffffff;
+	border-radius: 12px;
+	margin: 0 auto;
+	bottom: 10px;
+	border: 2px solid #ededed;
+}
+
+.toggle {
+	position: relative;
+	height: 16px;
+	width: 16px;
+	border-radius: 10px;
+	background: #c4c4c4;
+	top:2px;
+	left:2px;
+	-webkit-transition: left 1s, background 1s;
+}
+
+.helvetica {
+	left:17px;
+	background: #1CA9C9;
+}
+
+.futura {
+	left:17px;
+	background: #4DB788;
+}
+
+.knockout {
+	left:17px;
+	background: #FFCF48;
+}
+
+.din {
+	left:17px;
+	background: #1FCECB;
+}
+
+.opensans {
+	left:17px;
+	background: #EF5029;
+}
+
 

@@ -1,42 +1,27 @@
+// Write our base functions
+
+
+// When the page loads, add in our event handlers
 $(function() {
-
-
-	// Width and Height of SVG
-	var w = 960;
-	var h = 500;
-	var barPadding = 1;
+    
+   	$(".toggle").click(function() {
+		var key = $(this).data("type-id");
+		
+		if ($(this).hasClass(key)){
+			toggleOff(key);
+			$(this).removeClass(key);
+		}
+		
+		else {
+			toggleOn(key);
+			$(this).addClass(key);
+		}
+	});
+    
 	
-	// Creating SVG 
-	var svg = d3.select("#datavis")
- 			 	.append("svg");
- 			 	
- 	    svg.attr("width", w)
- 		   .attr("height", h);
-
-
-
- 		   
- 	// RenderGraph 
- 	
- 	var renderGraph = function(data) {
-	 	
-	 	svg.selectAll("rect")
-			   .data(data)
-			   .enter()
-			   .append("rect")
-			   .attr("x", function(d, i) {
-			   		return i * (w / data.length);
-			   })
-			   .attr("y", function(d) {
-			   		return h - (d * 4);
-			   })
-			   .attr("width", w / data.length - barPadding)
-			   .attr("height", function(d) {
-			   		return d * 4;
-			   })
-			   .attr("fill", "teal");
- 	}	
-
 });
-   
- 			 	
+
+
+
+
+

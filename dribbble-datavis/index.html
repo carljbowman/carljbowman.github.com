@@ -7,50 +7,144 @@
   		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
   		<script src="fonts.js" charset="utf-8"></script>
   		<link href='style/styles.css' rel='stylesheet'/>
+  		<script src='application.js'></script>
+  		
+  		<script type="text/javascript" src="//use.typekit.net/tqo3aly.js"></script>
+  		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   		     			
   </head>  		
   		
   <body>
+  	<header>
+	  	<h1>Sans on Dribbble</h1>
+  	</header>
   	<div id=datavis></div>
   	
+  	<section id="dashboard">
+  		<section id="toggles">
+	  		<div class="typeface" >
+		  		<div class="toggle-bg">
+			  		<div class="toggle helvetica" data-type-id='helvetica'></div>
+			  	</div>
+			  	<p>Helvetica</p>	  	
+			</div>
+	  	
+			<div class="typeface" > 	
+				 <div class="toggle-bg">
+					  <div class="toggle futura" data-type-id='futura'></div>
+				</div>
+				<p>Futura</p>	  	
+			</div>
+	  	
+			<div class="typeface" >  	
+		  		<div class="toggle-bg">
+			  		<div class="toggle knockout" data-type-id='knockout'></div>
+			  		</div>
+			  		<p>Knockout</p>
+			</div>
+	  	
+			<div class="typeface" >
+		  		<div class="toggle-bg">
+			  		<div class="toggle din" data-type-id='din'></div>
+			  		</div>
+			  		<p>Din</p>
+			 </div>
+	  	
+			<div class="typeface" >	  	
+				 <div class="toggle-bg">
+					 <div class="toggle opensans" data-type-id='opensans'></div>
+					 </div>
+			<p>Open Sans</p>
+			</div>
+		</section>
+		
+  	</section>
+  	
   	<script>
-  		// Data Set
-  		var data = fonts.helvetica; 
   		
-  		// Scales
-  		var yScale = d3.scale.linear()
-                     .domain([0, d3.max(data, function(d) { return d.adjusted; })])
-                     .range([0, h]);
+  		//Data
+  		var names = ['opensans', 'futura', 'knockout', 'din', 'helvetica'];
   		
 	  	// Width and Height of SVG
-	  	var w = 960;
-	  	var h = 400;
-	  	var padding=20;
+	  	var margin = {top: 20, right: 20, bottom: 30, left: 60},
+	  			 w = 960 - margin.left - margin.right,
+	  			 h = 320 - margin.top - margin.bottom;
+	  	
+	  	
+	  	// Scales
+	  	var x = d3.time.scale()
+	  			.range([0, w]);
+
+	  	var y = d3.scale.linear()
+	  			.range([h, 0]);
+	  			
+	  	x.domain(d3.extent(fonts.helvetica, function(d) { return new Date(d.month); }));
+	  	y.domain(d3.extent(fonts.helvetica, function(d) { return d.total; }));
+	  	
+	  	var xAxis = d3.svg.axis()
+	  		.scale(x)
+	  		.orient("bottom");
+
+	  	var yAxis = d3.svg.axis()
+	  		.scale(y)
+	  		.orient("left");
+	  		
+	  	var line = d3.svg.line()
+ 			.x(function(d) { return x(new Date(d.month)); })
+ 			.y(function(d) { return y(d.total); });
 	
-	  	// Creating SVG 
-	  	var svg = d3.select("#datavis")
- 			 		.append("svg");
- 			 	
- 			 	svg.attr("width", w)
- 			 	   .attr("height", h);
+	  	// Creating SVG Graph
+ 			 		
+ 		var svg = d3.select("#datavis").append("svg")
+ 					.attr("width", w + margin.left + margin.right)
+ 					.attr("height", h + margin.top + margin.bottom)
+ 					.attr("class", "graph")
+ 					.append("g")
+ 					.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+ 		
+ 			 	svg.append("g")
+ 			 		.attr("class", "x axis")
+ 			 		.attr("transform", "translate(0," + h + ")")
+ 			 		.call(xAxis); 
+ 			 		
+ 			 	svg.append("g")
+ 			 		.attr("class", "y axis")
+ 			 		.call(yAxis)
+ 			 		.append("text")
+ 			 		.attr("transform", "rotate(-90)")
+ 			 		.attr("y", -50)
+ 			 		.attr("x", -70)
+ 			 		.attr("class","key")
+ 			 		.attr("dy", ".71em")
+ 			 		.style("text-anchor", "end")
+ 			 		.text("Number of Tags");	 	   
 	   
  	    // RenderGraph 	
- 								
-	 		svg.selectAll("rect")
-	 			.data(data)
-	 			.enter()
-	 			.append("rect")
-	 				.attr("x", function(d, i) {
-		 				return i * (w / data.length);
-		 			})
-	 				.attr("y", function(d) {
-		 				return h - d.adjusted/4;
-		 			})
-	 				.attr("width", w/data.length-2)
-	 				.attr("height", function(d) {
-		 					return d.adjusted/4;
-		 			});	
+ 		
+		 		
+ 		for (var i =0 ; i < names.length; i++){
+			var name = names[i];
+			var data = fonts[name];
+			svg.append("path")
+				.datum(data)
+				.attr("class", "line-"+name)
+				.attr("d", line)
+				.attr("id", name);
+	}	 		
+		
+	function toggleOn(name){
+		svg.select("#"+name).attr("class", "line-"+name)
+	}	
+	
+	function toggleOff(name){
+		svg.select("#"+name).attr("class","line-"+name+"-hide")
+	}
+	
+	
   	</script>  
+  	
+  	
+  	
   	
   </body>
   
