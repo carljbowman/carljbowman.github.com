@@ -24,35 +24,35 @@
   		<section id="toggles">
 	  		<div class="typeface" >
 		  		<div class="toggle-bg">
-			  		<div class="toggle helvetica" data-type-id='helvetica'></div>
+			  		<div class="toggle" data-type-id='helvetica'></div>
 			  	</div>
 			  	<p>Helvetica</p>	  	
 			</div>
 	  	
 			<div class="typeface" > 	
 				 <div class="toggle-bg">
-					  <div class="toggle futura" data-type-id='futura'></div>
+					  <div class="toggle" data-type-id='futura'></div>
 				</div>
 				<p>Futura</p>	  	
 			</div>
 	  	
 			<div class="typeface" >  	
 		  		<div class="toggle-bg">
-			  		<div class="toggle knockout" data-type-id='knockout'></div>
+			  		<div class="toggle" data-type-id='knockout'></div>
 			  		</div>
 			  		<p>Knockout</p>
 			</div>
 	  	
 			<div class="typeface" >
 		  		<div class="toggle-bg">
-			  		<div class="toggle din" data-type-id='din'></div>
+			  		<div class="toggle" data-type-id='din'></div>
 			  		</div>
 			  		<p>Din</p>
 			 </div>
 	  	
 			<div class="typeface" >	  	
 				 <div class="toggle-bg">
-					 <div class="toggle opensans" data-type-id='opensans'></div>
+					 <div class="toggle" data-type-id='opensans'></div>
 					 </div>
 			<p>Open Sans</p>
 			</div>
@@ -127,7 +127,7 @@
 			var data = fonts[name];
 			svg.append("path")
 				.datum(data)
-				.attr("class", "line-"+name)
+				.attr("class", "line-"+name+"-hide")
 				.attr("d", line)
 				.attr("id", name);
 	}	 		
